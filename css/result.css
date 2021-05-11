@@ -1,0 +1,134 @@
+body{
+    background-color: #ffffff;
+    color: #4c4c4c;
+}
+
+h1{
+    font-size: 50px;
+    width: max-content;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 25px;
+    width: max-content;
+    margin: 15px auto 40px auto;
+}
+
+.box-wrapper{
+    position: relative;
+    width: max-content;
+    margin: 40px auto ;
+    padding-left: 100px;
+}
+
+/* 辺 */
+
+.edges{
+    appearance: none;
+    text-align: center;
+    line-height: 20px;
+}
+
+.edges .edge-a{
+    position: absolute;
+    top: 0px;
+    left: 230px;
+    font-weight: bold;
+}
+
+.edges .edge-b{
+    position: absolute;
+    top: 145px;
+    left: 150px;
+    font-weight: bold;
+
+}
+
+.edges .edge-c{
+    position: absolute;
+    top: 300px;
+    left: 230px;
+    font-weight: bold;
+
+}
+
+/* 面数 */
+
+.faces{
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    
+}
+
+.faces .face-a{
+    position: absolute;
+    top: 70px;
+    left: 333px;
+}
+
+.faces .face-b{
+    position: absolute;
+    top: 180px;
+    left: 275px;
+}
+
+.faces .face-c{
+    position: absolute;
+    top: 180px;
+    left: 390px;
+}
+
+.face-name{
+    font-weight: bold;
+}
+
+.result-wrapper{
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    line-height:45px;
+    border: 2px solid #4c4c4c;
+    margin: 40px auto 20px auto;
+    font-size: 18px;
+    color: #4c4c4c;
+    border-radius: 10px;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+.result{
+    text-align: center;
+    font-size: 30px;
+}
+
+.sup{
+    text-align: center;
+}
+
+.btn {
+    margin: 20px auto;
+	display: block;
+	position: relative;
+	width: 200px;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	background: #525858;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+.btn:hover {
+    opacity:0.8;
+    cursor: pointer;
+    text-decoration: none;
+
+}
