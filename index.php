@@ -104,7 +104,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['element'])) {
 <body>
 
     <h1>Menseki!</h1>
-    <h2>各値を入力して箱の面積を計算しよう！</h2>
+    <h2>値を入力して箱の総面積を計算しよう！</h2>
     <!-- 単位選択 -->
     <form action="" method="post">
         <div class="input-unit">
@@ -125,18 +125,18 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['element'])) {
             <div class="edges">
                 <div class="edge-a">
                     <label for="edge-a">辺 a</label><br>
-                    <input class="input-edge" size="9" type="number" min="1" name="edge-a" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-a'], ENT_QUOTES); ?>">
+                    <input class="input-edge" size="9" type="number" min="1" name="edge-a" placeholder="長さを入力" value="<?php echo htmlspecialchars($_POST['edge-a'], ENT_QUOTES); ?>">
                 </div>
                 <div class="edge-b">
                     <label for="edge-b">辺 b</label><br>
-                    <input class="input-edge" size="9" type="number" min="1" name="edge-b" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-b'], ENT_QUOTES); ?>">
+                    <input class="input-edge" size="9" type="number" min="1" name="edge-b" placeholder="長さを入力" value="<?php echo htmlspecialchars($_POST['edge-b'], ENT_QUOTES); ?>">
 
 
                 </div>
 
                 <div class="edge-c">
                     <label for="edge-c">辺 c</label><br>
-                    <input class="input-edge" size="9" type="number" min="1" name="edge-c" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-c'], ENT_QUOTES); ?>">
+                    <input class="input-edge" size="9" type="number" min="1" name="edge-c" placeholder="長さを入力" value="<?php echo htmlspecialchars($_POST['edge-c'], ENT_QUOTES); ?>">
                 </div>
             </div>
 
