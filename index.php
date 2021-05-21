@@ -125,18 +125,18 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['element'])) {
             <div class="edges">
                 <div class="edge-a">
                     <label for="edge-a">辺 a</label><br>
-                    <input class="text-box" size="9" type="number" min="1" name="edge-a" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-a'], ENT_QUOTES); ?>">
+                    <input class="input-edge" size="9" type="number" min="1" name="edge-a" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-a'], ENT_QUOTES); ?>">
                 </div>
                 <div class="edge-b">
                     <label for="edge-b">辺 b</label><br>
-                    <input class="text-box" size="9" type="number" min="1" name="edge-b" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-b'], ENT_QUOTES); ?>">
+                    <input class="input-edge" size="9" type="number" min="1" name="edge-b" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-b'], ENT_QUOTES); ?>">
 
 
                 </div>
 
                 <div class="edge-c">
                     <label for="edge-c">辺 c</label><br>
-                    <input class="text-box" size="9" type="number" min="1" name="edge-c" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-c'], ENT_QUOTES); ?>">
+                    <input class="input-edge" size="9" type="number" min="1" name="edge-c" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-c'], ENT_QUOTES); ?>">
                 </div>
             </div>
 
@@ -144,7 +144,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['element'])) {
             <div class="faces">
                 <div class="face-a">
                     <p class="face-name">A</p>
-                    <select class="number-box" name="face-a" ?>">
+                    <select class="input-face" name="face-a" ?>">
                         <option value="1" <?php echo array_key_exists('face-a', $_POST) && $_POST['face-a'] == '1' ? 'selected' : ''; ?>>1</option>
                         <option value="2" <?php echo array_key_exists('face-a', $_POST) && $_POST['face-a'] == '2' ? 'selected' : ''; ?>>2</option>
                         <option value="3" <?php echo array_key_exists('face-a', $_POST) && $_POST['face-a'] == '3' ? 'selected' : ''; ?>>3</option>
@@ -155,7 +155,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['element'])) {
 
                 <div class="face-b">
                     <p class="face-name">B</p>
-                    <select class="number-box" name="face-b" value="<?php echo $_POST['face-b']; ?>">
+                    <select class="input-face" name="face-b" value="<?php echo $_POST['face-b']; ?>">
                         <option value="1" <?php echo array_key_exists('face-b', $_POST) && $_POST['face-b'] == '1' ? 'selected' : ''; ?>>1</option>
                         <option value="2" <?php echo array_key_exists('face-b', $_POST) && $_POST['face-b'] == '2' ? 'selected' : ''; ?>>2</option>
                         <option value="3" <?php echo array_key_exists('face-b', $_POST) && $_POST['face-b'] == '3' ? 'selected' : ''; ?>>3</option>
@@ -166,7 +166,7 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['element'])) {
 
                 <div class="face-c">
                     <p class="face-name">C</p>
-                    <select class="number-box" name="face-c" value="<?php echo $_POST['face-c']; ?>">
+                    <select class="input-face" name="face-c" value="<?php echo $_POST['face-c']; ?>">
                         <option value="1" <?php echo array_key_exists('face-c', $_POST) && $_POST['face-c'] == '1' ? 'selected' : ''; ?>>1</option>
                         <option value="2" <?php echo array_key_exists('face-c', $_POST) && $_POST['face-c'] == '2' ? 'selected' : ''; ?>>2</option>
                         <option value="3" <?php echo array_key_exists('face-c', $_POST) && $_POST['face-c'] == '3' ? 'selected' : ''; ?>>3</option>
