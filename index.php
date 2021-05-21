@@ -125,18 +125,18 @@ if ($_REQUEST['action'] == 'rewrite' && isset($_SESSION['element'])) {
             <div class="edges">
                 <div class="edge-a">
                     <label for="edge-a">辺 a</label><br>
-                    <input class="text-box" size="9" type="text" name="edge-a" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-a'], ENT_QUOTES); ?>">
+                    <input class="text-box" size="9" type="number" min="1" name="edge-a" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-a'], ENT_QUOTES); ?>">
                 </div>
                 <div class="edge-b">
                     <label for="edge-b">辺 b</label><br>
-                    <input class="text-box" size="9" type="text" name="edge-b" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-b'], ENT_QUOTES); ?>">
+                    <input class="text-box" size="9" type="number" min="1" name="edge-b" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-b'], ENT_QUOTES); ?>">
 
 
                 </div>
 
                 <div class="edge-c">
                     <label for="edge-c">辺 c</label><br>
-                    <input class="text-box" size="9" type="text" name="edge-c" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-c'], ENT_QUOTES); ?>">
+                    <input class="text-box" size="9" type="number" min="1" name="edge-c" placeholder="数字を入力" value="<?php echo htmlspecialchars($_POST['edge-c'], ENT_QUOTES); ?>">
                 </div>
             </div>
 
